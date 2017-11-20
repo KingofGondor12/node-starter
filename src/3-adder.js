@@ -30,3 +30,11 @@ Challenges:
 1. Add `multiple` and `multipleNumbersString` functions that multiply instead of adding, with example usage
 
 */
+
+function multiple(numbers) {
+  let total = 0
+  numbers.forEach(number => {
+    total = total * number
+  })
+  return total
+}

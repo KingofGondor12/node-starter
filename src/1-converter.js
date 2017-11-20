@@ -26,3 +26,42 @@ Challenges:
 3. Add `hottestTemperature` function, which takes an array of temperatures, and returns the highest one
 
 */
+
+// Challenge 1
+
+function convertFahrenheitToCelsius(fahrenheit) {
+  return (fahrenheit - 32) / 1.8
+}
+
+const newmondayTemperature = 107
+console.log(`On Monday it is ${newmondayTemperature}°F`)
+celsius = convertFahrenheitToCelsius(mondayTemperature)
+console.log(`All the proper people read it as ${celsius}°C`)
+
+// Challenge 2
+
+function formatCelsius(celsius) {
+  return `${Math.round(celsius)}°C`
+}
+
+const newestmondayTemperature = 107
+console.log(`On Monday it is ${newestmondayTemperature}°F`)
+celsius = convertCelsiusToFahrenheit(mondayTemperature)
+output = formatCelsius(celsius)
+console.log(`All the proper people read it as ${output}`)
+
+// Challenge 3
+
+var tempArray = [
+  24,
+  37,
+  12,
+  40,
+  57,
+];
+
+function hottestTemperature(tempArray) {
+  result = tempArray.sort(function(a, b){return b - a});
+  return result[0]
+}
+console.log(hottestTemperature(tempArray))
